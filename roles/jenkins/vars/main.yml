@@ -1,0 +1,11 @@
+---
+# vars file for jenkins
+
+java:
+  VERSION: "java-17-amazon-corretto"
+  ALTERNATIVES: "/usr/lib/jvm/java-17-amazon-corretto.x86_64/bin/java"
+
+jenkins:
+  repo_URL: "http://pkg.jenkins-ci.org/redhat/jenkins.repo"
+  gpg_key: "https://pkg.jenkins.io/redhat/jenkins.io-2023.key"
+  JAVA_OPTIONS: "-Djava.awt.headless=true -Djenkins.install.runSetupWizard=false"
